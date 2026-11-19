@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111311">
+<meta name="description" content="A tiny offline recipe card for budget chicken Manchow soup.">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Chicken Soup | Budget Kitchen</title>
+<style>
+:root{color-scheme:dark;--bg:#101310;--panel:#191e19;--line:#303a30;--muted:#a7b0a4;--text:#f1f3ed;--accent:#c7ed8b;--accent2:#e3a36e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0%,#283324 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{width:min(760px,100%);margin:auto;padding:28px 18px 64px}.eyebrow{color:var(--accent);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:750}
+header{padding:24px 0 26px}h1{font-size:clamp(2.5rem,9vw,5rem);line-height:.98;letter-spacing:-.065em;margin:12px 0}h1 span{color:var(--accent)}.sub{color:var(--muted);max-width:480px;margin:14px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:18px 0 24px}.stat,.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px}.stat{padding:13px}.stat b{display:block;font-size:1.15rem}.stat small{color:var(--muted)}
+.panel{padding:20px;margin:14px 0}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}h2{font-size:1.2rem;margin:0;letter-spacing:-.02em}.hint{font-size:.8rem;color:var(--muted)}
+ul,ol{padding:0;margin:0;list-style:none}.ingredient,.step{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--line)}.ingredient:first-child,.step:first-child{border-top:0}
+input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;margin:3px 0 0;flex:none}.ingredient label{flex:1}.ingredient input:checked+label,.step input:checked+label{text-decoration:line-through;color:var(--muted)}
+.step-num{color:var(--accent);font-weight:800;font-size:.83rem;min-width:24px;padding-top:1px}.step label{flex:1}.step strong{display:block;margin-bottom:2px}.step p{color:var(--muted);margin:0;font-size:.92rem}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 15px;border-radius:999px;font:inherit;font-size:.88rem;cursor:pointer}.btn.primary{background:var(--accent);color:#182014;border-color:var(--accent);font-weight:750}.progress{height:7px;background:#303a30;border-radius:9px;overflow:hidden;margin:10px 0 5px}.progress div{height:100%;width:0;background:var(--accent);transition:width .2s}.foot{color:var(--muted);font-size:.82rem;text-align:center;margin-top:24px}
+@media(min-width:620px){main{padding-top:42px}.stats{gap:12px}.panel{padding:24px}}
+@media print{body{background:white;color:#111}.panel,.stat{background:white;border-color:#bbb}.hint,.sub,.stat small,.step p,.foot{color:#444}.actions{display:none}main{padding:0}.ingredient input,.step input{filter:grayscale(1)}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="eyebrow">Budget kitchen · one-pot comfort</div><h1>Chicken<br><span>Manchow.</span></h1><p class="sub">A simple, filling bowl built around one ₹10 instant soup sachet. No fancy ingredients, no kitchen drama.</p></header>
+<section class="stats" aria-label="Recipe details"><div class="stat"><b>₹10+</b><small>Soup base</small></div><div class="stat"><b>20 min</b><small>Approx. time</small></div><div class="stat"><b>1–2</b><small>Servings</small></div></section>
+<section class="panel"><div class="section-head"><h2>Ingredients</h2><span class="hint">Tick as you go</span></div><ul id="ingredients">
+<li class="ingredient"><input id="i1" type="checkbox"><label for="i1">250 g boneless chicken, cut into small strips</label></li>
+<li class="ingredient"><input id="i2" type="checkbox"><label for="i2">1 packet (12–15 g) Ching’s Manchow soup mix</label></li>
+<li class="ingredient"><input id="i3" type="checkbox"><label for="i3">1 red onion, finely chopped</label></li>
+<li class="ingredient"><input id="i4" type="checkbox"><label for="i4">1 tomato, finely chopped</label></li>
+<li class="ingredient"><input id="i5" type="checkbox"><label for="i5">400–450 ml water</label></li>
+<li class="ingredient"><input id="i6" type="checkbox"><label for="i6">1 tsp oil, pepper and salt as needed</label></li>
+<li class="ingredient"><input id="i7" type="checkbox"><label for="i7">Optional: garlic, ginger or green chilli</label></li>
+</ul></section>
+<section class="panel"><div class="section-head"><h2>Let's cook</h2><span class="hint" id="count">0 of 5 done</span></div><div class="progress"><div id="bar"></div></div><ol id="steps">
+<li class="step"><span class="step-num">01</span><input id="s1" type="checkbox"><label for="s1"><strong>Make the chicken broth</strong><p>Simmer chicken in about 400 ml water with a little salt until fully cooked, around 8–10 minutes. Remove chicken and keep the liquid.</p></label></li>
+<li class="step"><span class="step-num">02</span><input id="s2" type="checkbox"><label for="s2"><strong>Build the base</strong><p>Heat oil. Sauté onion (and optional garlic, ginger or chilli) until softened. Add tomato and cook it down.</p></label></li>
+<li class="step"><span class="step-num">03</span><input id="s3" type="checkbox"><label for="s3"><strong>Add the soup mix</strong><p>Mix the sachet with a splash of cool water until smooth. Pour it into the pan with the reserved broth, stirring.</p></label></li>
+<li class="step"><span class="step-num">04</span><input id="s4" type="checkbox"><label for="s4"><strong>Bring it together</strong><p>Add the cooked chicken. Simmer for 2–3 minutes until the soup thickens. Add a little water only if needed.</p></label></li>
+<li class="step"><span class="step-num">05</span><input id="s5" type="checkbox"><label for="s5"><strong>Taste and serve</strong><p>Finish with black pepper. Taste before adding extra salt because the packet is already seasoned. Serve hot.</p></label></li>
+</ol></section>
+<div class="actions"><button class="btn primary" id="reset">Reset checklist</button><button class="btn" onclick="window.print()">Print recipe</button></div>
+<p class="foot">Made for small budgets and hungry evenings. Works offline after the first visit.</p>
+</main>
+<script>
+const boxes=[...document.querySelectorAll('#steps input')],bar=document.querySelector('#bar'),count=document.querySelector('#count');
+function update(){const done=boxes.filter(x=>x.checked).length;count.textContent=done+' of 5 done';bar.style.width=(done/5*100)+'%'}
+boxes.forEach(x=>x.addEventListener('change',update));
+document.querySelector('#reset').addEventListener('click',()=>{document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);update()});update();
+if('serviceWorker' in navigator && location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}
+</script>
+</body></html>
