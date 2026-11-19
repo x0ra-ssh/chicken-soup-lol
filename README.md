@@ -51,7 +51,6 @@ No build command. No dependencies. No 400 MB node_modules folder quietly judging
 ## 🧾 Credits
 
 - **Recipe idea, project direction & final say on the soup:** [@x0ra-ssh](https://github.com/x0ra-ssh)
-- **Web app, code & README assistance:** ChatGPT
 - **The MVP ingredient:** that ₹10 Manchow soup sachet. A real one-person startup.
 
 ## A tiny disclaimer
