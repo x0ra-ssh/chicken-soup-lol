@@ -1,0 +1,44 @@
+name: Recipe review
+description: Tell us how your chicken Manchow soup turned out.
+title: "Recipe review: "
+labels: ["recipe review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Made the soup? Drop your kitchen report below. Short and honest is perfect.
+  - type: input
+    id: name
+    attributes:
+      label: Name or nickname
+      description: Optional. What should we call you?
+      placeholder: Soup enthusiast
+    validations:
+      required: false
+  - type: dropdown
+    id: rating
+    attributes:
+      label: How was it?
+      options:
+        - "5 - Would make again immediately"
+        - "4 - Really good"
+        - "3 - Decent bowl"
+        - "2 - Needs a little work"
+        - "1 - The kitchen and I need to talk"
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: Your experience
+      description: What worked? What would you change? Any upgrades?
+      placeholder: "I added extra garlic and..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: repeat
+    attributes:
+      label: The all-important question
+      options:
+        - label: I'd make this recipe again.
+          required: false
