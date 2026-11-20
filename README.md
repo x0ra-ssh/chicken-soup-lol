@@ -1,60 +1,72 @@
-# 🍜 chicken-soup-lol
+# Soup Club 🍜
+### The Midnight Kitchen
 
-A humble little chicken Manchow soup recipe powered by a ₹10 packet, a handful of basics, and the unreasonable confidence of someone who is hungry.
+Good soup. No nonsense.
 
-**The mission:** turn budget ingredients into a proper bowl of comfort.  
-**The method:** chicken broth, one instant soup sachet, onion, tomato, and a little kitchen optimism.  
-**The result:** soup. Actual soup. We did it.
+Soup Club is a tiny, offline-first recipe corner for practical bowls, late-night cravings and people who don't need a 40-step culinary documentary to make dinner.
 
-## 🥣 Make the soup
+**[Open the kitchen →](https://x0ra-ssh.github.io/chicken-soup-lol/)**
 
-Open the live recipe here:
+## On the menu
 
-**[Cook something good →](https://x0ra-ssh.github.io/chicken-soup-lol/)**
+| Recipe | Vibe | Time |
+|---|---|---:|
+| Chicken Manchow | Savoury, warming, budget-friendly | 20 min |
+| Hot & Sour Soup | Tangy, spicy, crunchy | 15 min |
 
-The recipe is designed around:
-- 250 g boneless chicken
-- One 12–15 g Ching's Manchow soup sachet (the ₹10 MVP)
-- One onion and one tomato
-- Around 400–450 ml water
-- Pepper, oil, and optional garlic/ginger/chilli
+## Kitchen features
 
-The page includes a tickable ingredient list, cooking checklist, progress bar, and print option. No account, no framework, no culinary PhD required.
+- Search recipes and filter vegetarian / chicken bowls.
+- Save favourites on your device.
+- Tick off ingredients and cooking steps.
+- Progress is remembered locally, even after a refresh.
+- Step-by-step cooking mode for hands-busy moments.
+- Built-in kitchen timer.
+- Print-friendly recipe sheets.
+- Offline access after the first successful visit.
 
-## ⭐ Tried the recipe? Leave a review!
+No account. No framework. No subscription to a man explaining onions.
 
-Made it? Changed it? Accidentally made it your whole personality for dinner? We want to hear about it.
+## Leave a kitchen report
 
-**[Submit your recipe review](https://github.com/x0ra-ssh/chicken-soup-lol/issues/new?template=recipe-review.yml)**
+Made a bowl? Changed the seasoning? Added enough chilli to see through time?
 
-It opens a tiny form. Tell us how it went, what you changed, and whether you'd make it again. No essay, no food critic vocabulary, no judgement if you added extra chilli.
+**[Submit a recipe review](https://github.com/x0ra-ssh/chicken-soup-lol/issues/new?template=recipe-review.yml)**
 
-You can also browse everyone else's kitchen reports in [Recipe Reviews](https://github.com/x0ra-ssh/chicken-soup-lol/issues?q=is%3Aissue).
+Browse everyone's kitchen reports in [Recipe Reviews](https://github.com/x0ra-ssh/chicken-soup-lol/issues?q=is%3Aissue).
 
-## 💻 Run it locally
+Review submissions use GitHub Issues and need an internet connection. Your checklist and favourites, on the other hand, stay on your own device.
+
+## Run it locally
 
 1. Clone or download this repository.
-2. Open `index.html` in your browser.
+2. Serve the folder from a local web server, or open `index.html` for a basic preview.
+3. For service-worker offline caching, use localhost or HTTPS.
 
-For the offline cache to work, serve it from localhost or HTTPS. GitHub Pages already does that for the live version.
+GitHub Pages already serves the live site over HTTPS.
 
-## 🚀 Hosting
+## Hosting
 
-This is a static site. GitHub Pages serves it directly from the `main` branch root:
+This is a static site. GitHub Pages serves it from the root of the `main` branch.
 
 - **Source:** Deploy from a branch
 - **Branch:** `main`
 - **Folder:** `/(root)`
+- **Build command:** None
+- **Dependencies:** None. We like our soup and our dependency tree equally uncomplicated.
 
-No build command. No dependencies. No 400 MB node_modules folder quietly judging you.
+## Credits
 
-## 🧾 Credits
+- **Recipe idea, project direction and final say on the soup:** [@x0ra-ssh](https://github.com/x0ra-ssh)
+- **Hot & Sour Soup recipe reference:** [Hebbars Kitchen](https://hebbarskitchen.com/hot-and-sour-soup-recipe-hot-n-sour-soup/)
+- **The Manchow MVP:** one very hardworking ₹10 soup sachet.
 
-- **Recipe idea, project direction & final say on the soup:** [@x0ra-ssh](https://github.com/x0ra-ssh)
-- **The MVP ingredient:** that ₹10 Manchow soup sachet. A real one-person startup.
+## A small kitchen note
 
-## A tiny disclaimer
+Cooking times vary with ingredient size and stove mood. Make sure the chicken is fully cooked before serving. Taste before adding extra salt because the soup mix is already seasoned.
 
-Cooking times vary with chicken size and stove mood. Make sure the chicken is fully cooked before serving. Taste before adding extra salt because the soup mix is already seasoned.
+If you make it, leave a review. If you improve it, share the upgrade. If you burn it... hydrate, regroup, and maybe order momos.
 
-If you make it, leave a review. If you improve it, share the upgrade. If you burn it... well, the issue form is still open.
+---
+
+*Made for small budgets, big soup energy and hungry evenings.*
