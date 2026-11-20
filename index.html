@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#111311">
-<meta name="description" content="A tiny offline recipe card for budget chicken Manchow soup.">
+<meta name="description" content="A tiny offline soup recipe collection: chicken Manchow and street-style hot and sour soup.">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Chicken Soup | Budget Kitchen</title>
+<title>Soup Club | Budget Kitchen</title>
 <style>
 :root{color-scheme:dark;--bg:#101310;--panel:#191e19;--line:#303a30;--muted:#a7b0a4;--text:#f1f3ed;--accent:#c7ed8b;--accent2:#e3a36e}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0%,#283324 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
@@ -24,9 +24,9 @@ input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;margin:3p
 </head>
 <body>
 <main>
-<header><div class="eyebrow">Budget kitchen · one-pot comfort</div><h1>Chicken<br><span>Manchow.</span></h1><p class="sub">A simple, filling bowl built around one ₹10 instant soup sachet. No fancy ingredients, no kitchen drama.</p></header>
-<section class="stats" aria-label="Recipe details"><div class="stat"><b>₹10+</b><small>Soup base</small></div><div class="stat"><b>20 min</b><small>Approx. time</small></div><div class="stat"><b>1–2</b><small>Servings</small></div></section>
-<section class="panel"><div class="section-head"><h2>Ingredients</h2><span class="hint">Tick as you go</span></div><ul id="ingredients">
+<header><div class="eyebrow">Budget kitchen · two bowls, zero drama</div><h1>Soup<br><span>Club.</span></h1><p class="sub">Two bowls: budget chicken Manchow and punchy street-style hot and sour. Pick your fighter, tick things off, eat well.</p><nav class="actions"><a class="btn primary" href="#chicken">Chicken Manchow</a><a class="btn" href="#hot-sour">Hot &amp; Sour</a></nav></header>
+<section id="chicken" class="stats" aria-label="Chicken Manchow recipe details"><div class="stat"><b>₹10+</b><small>Soup base</small></div><div class="stat"><b>20 min</b><small>Approx. time</small></div><div class="stat"><b>1–2</b><small>Servings</small></div></section>
+<section class="panel"><div class="section-head"><h2>Chicken Manchow · Ingredients</h2><span class="hint">Tick as you go</span></div><ul id="ingredients">
 <li class="ingredient"><input id="i1" type="checkbox"><label for="i1">250 g boneless chicken, cut into small strips</label></li>
 <li class="ingredient"><input id="i2" type="checkbox"><label for="i2">1 packet (12–15 g) Ching’s Manchow soup mix</label></li>
 <li class="ingredient"><input id="i3" type="checkbox"><label for="i3">1 red onion, finely chopped</label></li>
@@ -35,15 +35,49 @@ input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;margin:3p
 <li class="ingredient"><input id="i6" type="checkbox"><label for="i6">1 tsp oil, pepper and salt as needed</label></li>
 <li class="ingredient"><input id="i7" type="checkbox"><label for="i7">Optional: garlic, ginger or green chilli</label></li>
 </ul></section>
-<section class="panel"><div class="section-head"><h2>Let's cook</h2><span class="hint" id="count">0 of 5 done</span></div><div class="progress"><div id="bar"></div></div><ol id="steps">
+<section class="panel"><div class="section-head"><h2>Chicken Manchow · Let's cook</h2><span class="hint" id="count">0 of 5 done</span></div><div class="progress"><div id="bar"></div></div><ol id="steps">
 <li class="step"><span class="step-num">01</span><input id="s1" type="checkbox"><label for="s1"><strong>Make the chicken broth</strong><p>Simmer chicken in about 400 ml water with a little salt until fully cooked, around 8–10 minutes. Remove chicken and keep the liquid.</p></label></li>
 <li class="step"><span class="step-num">02</span><input id="s2" type="checkbox"><label for="s2"><strong>Build the base</strong><p>Heat oil. Sauté onion (and optional garlic, ginger or chilli) until softened. Add tomato and cook it down.</p></label></li>
 <li class="step"><span class="step-num">03</span><input id="s3" type="checkbox"><label for="s3"><strong>Add the soup mix</strong><p>Mix the sachet with a splash of cool water until smooth. Pour it into the pan with the reserved broth, stirring.</p></label></li>
 <li class="step"><span class="step-num">04</span><input id="s4" type="checkbox"><label for="s4"><strong>Bring it together</strong><p>Add the cooked chicken. Simmer for 2–3 minutes until the soup thickens. Add a little water only if needed.</p></label></li>
 <li class="step"><span class="step-num">05</span><input id="s5" type="checkbox"><label for="s5"><strong>Taste and serve</strong><p>Finish with black pepper. Taste before adding extra salt because the packet is already seasoned. Serve hot.</p></label></li>
 </ol></section>
-<div class="actions"><button class="btn primary" id="reset">Reset checklist</button><button class="btn" onclick="window.print()">Print recipe</button></div>
-<p class="foot">Made for small budgets and hungry evenings. Works offline after the first visit.</p>
+<section id="hot-sour" class="panel">
+<div class="eyebrow">Recipe no. 02 · Indo-Chinese classic</div>
+<div class="section-head"><h2>Hot &amp; Sour Soup</h2><span class="hint">Hebbars Kitchen</span></div>
+<p class="sub">A spicy, tangy vegetable soup with a light glossy body and plenty of crunch. Prep 5 min · Cook 10 min · Serves 4.</p>
+<div class="stats"><div class="stat"><b>15 min</b><small>Total time</small></div><div class="stat"><b>4</b><small>Servings</small></div><div class="stat"><b>111 kcal</b><small>Per serving · source estimate</small></div></div>
+<div class="section-head"><h2>Ingredients</h2><span class="hint">Tick as you go</span></div>
+<ul>
+<li class="ingredient"><input id="hs-i1" type="checkbox"><label for="hs-i1">2 tsp oil</label></li>
+<li class="ingredient"><input id="hs-i2" type="checkbox"><label for="hs-i2">1 inch ginger and 4 cloves garlic, finely chopped</label></li>
+<li class="ingredient"><input id="hs-i3" type="checkbox"><label for="hs-i3">2 green chillies and ½ onion, finely chopped</label></li>
+<li class="ingredient"><input id="hs-i4" type="checkbox"><label for="hs-i4">½ cup mushrooms, finely chopped (optional)</label></li>
+<li class="ingredient"><input id="hs-i5" type="checkbox"><label for="hs-i5">1 carrot, ½ cup cabbage, 5 beans, 3 tbsp sweet corn and ½ capsicum, finely chopped</label></li>
+<li class="ingredient"><input id="hs-i6" type="checkbox"><label for="hs-i6">1 tsp salt, or to taste</label></li>
+<li class="ingredient"><input id="hs-i7" type="checkbox"><label for="hs-i7">5 cups water or vegetable stock</label></li>
+<li class="ingredient"><input id="hs-i8" type="checkbox"><label for="hs-i8">2 tbsp chilli sauce, 2 tbsp vinegar, 2 tbsp soy sauce</label></li>
+<li class="ingredient"><input id="hs-i9" type="checkbox"><label for="hs-i9">½ tsp black pepper powder</label></li>
+<li class="ingredient"><input id="hs-i10" type="checkbox"><label for="hs-i10">2 tbsp coriander and 2 tbsp spring onion greens, chopped</label></li>
+<li class="ingredient"><input id="hs-i11" type="checkbox"><label for="hs-i11">Slurry: 1 tbsp corn flour + ¼ cup water</label></li>
+</ul>
+<div class="section-head" style="margin-top:22px"><h2>Let's cook</h2><span class="hint">11 steps</span></div>
+<ol>
+<li class="step"><span class="step-num">01</span><input id="hs-s1" type="checkbox"><label for="hs-s1"><strong>Prep everything</strong><p>Wash and finely chop all vegetables. Small pieces cook quickly and evenly.</p></label></li>
+<li class="step"><span class="step-num">02</span><input id="hs-s2" type="checkbox"><label for="hs-s2"><strong>Make the slurry</strong><p>Mix corn flour with ¼ cup water until smooth and lump-free. Keep aside.</p></label></li>
+<li class="step"><span class="step-num">03</span><input id="hs-s3" type="checkbox"><label for="hs-s3"><strong>Build the aromatic base</strong><p>Heat oil in a kadai. Add ginger, garlic, green chilli and onion. Sauté on high heat until aromatic and just softened. Don't brown the onion.</p></label></li>
+<li class="step"><span class="step-num">04</span><input id="hs-s4" type="checkbox"><label for="hs-s4"><strong>Add mushrooms</strong><p>Sauté until they release moisture and shrink slightly. Optional, so skip if needed.</p></label></li>
+<li class="step"><span class="step-num">05</span><input id="hs-s5" type="checkbox"><label for="hs-s5"><strong>Stir-fry the vegetables</strong><p>Add carrot, cabbage, beans, corn and capsicum. Season with salt and stir-fry on high heat for about 2 minutes. Keep the crunch.</p></label></li>
+<li class="step"><span class="step-num">06</span><input id="hs-s6" type="checkbox"><label for="hs-s6"><strong>Add the liquid</strong><p>Pour in 5 cups water or vegetable stock and mix well.</p></label></li>
+<li class="step"><span class="step-num">07</span><input id="hs-s7" type="checkbox"><label for="hs-s7"><strong>Season it</strong><p>Add chilli sauce, vinegar, soy sauce and black pepper. Taste and adjust.</p></label></li>
+<li class="step"><span class="step-num">08</span><input id="hs-s8" type="checkbox"><label for="hs-s8"><strong>Thicken gently</strong><p>Stir the slurry again, then pour it in slowly while stirring continuously to prevent lumps.</p></label></li>
+<li class="step"><span class="step-num">09</span><input id="hs-s9" type="checkbox"><label for="hs-s9"><strong>Simmer</strong><p>Bring to a boil and cook for about 2 minutes, until lightly thickened. It thickens a little more as it cools.</p></label></li>
+<li class="step"><span class="step-num">10</span><input id="hs-s10" type="checkbox"><label for="hs-s10"><strong>Finish with herbs</strong><p>Add coriander and spring onion greens. Mix and turn off the heat.</p></label></li>
+<li class="step"><span class="step-num">11</span><input id="hs-s11" type="checkbox"><label for="hs-s11"><strong>Serve immediately</strong><p>Enjoy it hot, while the vegetables still have their bite.</p></label></li>
+</ol>
+<p class="hint">Original recipe: <a href="https://hebbarskitchen.com/hot-and-sour-soup-recipe-hot-n-sour-soup/" target="_blank" rel="noopener">Hebbars Kitchen · Hot and Sour Soup</a>. Quantities are credited to the source; method condensed for this checklist.</p>
+</section>\n<div class="actions"><button class="btn primary" id="reset">Reset checklist</button><button class="btn" onclick="window.print()">Print recipe</button></div>
+<p class="foot">Made for small budgets, big soup energy and hungry evenings. Works offline after the first visit.</p>
 </main>
 <script>
 const boxes=[...document.querySelectorAll('#steps input')],bar=document.querySelector('#bar'),count=document.querySelector('#count');
