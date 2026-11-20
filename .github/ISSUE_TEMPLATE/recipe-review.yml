@@ -1,12 +1,22 @@
 name: Recipe review
-description: Tell us how your chicken Manchow soup turned out.
+description: Tell us how your Soup Club bowl turned out.
 title: "Recipe review: "
 labels: ["recipe review"]
 body:
   - type: markdown
     attributes:
       value: |
-        Made the soup? Drop your kitchen report below. Short and honest is perfect.
+        Made a bowl? Drop your kitchen report below. Short and honest is perfect.
+  - type: dropdown
+    id: recipe
+    attributes:
+      label: Which recipe did you make?
+      options:
+        - Chicken Manchow
+        - Hot & Sour Soup
+        - I made my own variation
+    validations:
+      required: true
   - type: input
     id: name
     attributes:
