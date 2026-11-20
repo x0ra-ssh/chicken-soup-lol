@@ -1,1 +1,18 @@
-{"name":"Chicken Manchow Soup","short_name":"Chicken Soup","start_url":"./","display":"standalone","background_color":"#101310","theme_color":"#111311","description":"A tiny offline budget chicken soup recipe."}
+{
+  "name": "Soup Club | The Midnight Kitchen",
+  "short_name": "Soup Club",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#11100f",
+  "theme_color": "#11100f",
+  "description": "A tiny, offline-first kitchen for good soup, practical recipes and zero nonsense.",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
